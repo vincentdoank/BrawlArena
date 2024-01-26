@@ -72,13 +72,13 @@ namespace WTI.NetCode
 
         public override void OnNetworkSpawn()
         {
-            NetworkManager.CustomMessagingManager.OnUnnamedMessage += ReceiveMessage;
+            //NetworkManager.CustomMessagingManager.OnUnnamedMessage += ReceiveMessage;
             Debug.Log("OnNetworkSpawn");
         }
 
         public override void OnNetworkDespawn()
         {
-            NetworkManager.CustomMessagingManager.OnUnnamedMessage -= ReceiveMessage;
+            //NetworkManager.CustomMessagingManager.OnUnnamedMessage -= ReceiveMessage;
         }
 
         public void SendUnnamedMessage(string dataToSend)

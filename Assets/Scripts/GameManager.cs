@@ -4,9 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using MoreMountains.CorgiEngine;
-using WTI.NetCode;
 using Random = UnityEngine.Random;
-using UnityEngine.Networking;
 using UnityEngine.UI;
 
 [Serializable]
@@ -275,7 +273,7 @@ public class GameManager : MonoBehaviour
 
     public void Connect()
     {
-        NetworkController.Instance.Connect();
+        //NetworkController.Instance.Connect();
     }
 
     public void OnPlayerReady(int count)
